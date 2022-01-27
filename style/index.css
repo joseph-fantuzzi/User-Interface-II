@@ -425,3 +425,121 @@ Please view this project at 1650x843 pixels since it is not responsive yet
 Please view this project at 1650x843 pixels since it is not responsive yet
 Please view this project at 1650x843 pixels since it is not responsive yet
 ATTENTION */
+
+@media (max-width: 1620px) {
+  #projects-container {
+    width: 60%;
+    margin-right: 0vh;
+    height: 70%;
+    margin-bottom: 1vh;
+  }
+
+  #projects-title {
+    margin-left: 0vh;
+    padding-top: 3vh;
+  }
+
+  #projects {
+    flex-direction: column;
+    height: 120vh;
+  }
+}
+
+@media (max-width: 1496px) {
+  #pro-pic {
+    margin-right: 3vh;
+  }
+}
+
+@media (max-width: 1346px) {
+  #projects {
+    height: 170vh;
+  }
+
+  #name {
+    font-size: 4rem;
+  }
+
+  #intro,
+  #whatiam {
+    font-size: 2rem;
+  }
+
+  #pro-pic {
+    margin-right: 15vh;
+  }
+
+  #abouttitle {
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 1180px) {
+  #aboutme {
+    height: 130vh;
+  }
+
+  #aboutmetext {
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 1162px) {
+  #main-text {
+    height: 50%;
+    margin-left: 40vh;
+  }
+
+  main {
+    height: 100vh;
+  }
+
+  #pro-pic {
+    margin-left: 40vh;
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 1150px) {
+  #skills-container {
+    gap: 6vh;
+  }
+
+  #skills {
+    height: 150vh;
+  }
+
+  #skills-title {
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 1127px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-text {
+    height: 50%;
+    width: 100%;
+  }
+
+  #pro-pic {
+    margin: 0;
+    height: 50%;
+  }
+}
+
+/* @media (max-width: 1035px) {
+	#aboutmetext {
+		margin-top: 15vh;
+	}
+} */
+
+@media (max-width: 1000px) {
+  #aboutmetext p {
+    width: 60%;
+  }
+}
