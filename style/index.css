@@ -1,1 +1,427 @@
-/* Add CSS styling here */
+/*Eric Meyer Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*This is the start of my CSS implementation*/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #1f6bb2;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#portfolio {
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-left: 3%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: color 0.25s ease-in;
+}
+
+nav a:hover {
+  color: black;
+}
+
+h2,
+#name {
+  color: black;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#intro {
+  font-size: 2.5rem;
+}
+
+#name {
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+span.title {
+  color: #1f6bb2;
+  font-weight: 700;
+}
+
+#hirebtn {
+  text-decoration: none;
+  color: white;
+  background-color: #1f6bb2;
+  padding: 2%;
+  border-radius: 25px;
+  font-size: 2rem;
+  border: 3px solid #1f6bb2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background-color 0.25s ease-in, transform 0.25s ease-in;
+}
+
+#hirebtn:hover {
+  color: black;
+  background-color: white;
+  transform: translateX(30%);
+}
+
+main div img {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 20% 20%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3%;
+  height: 60vh;
+}
+
+#main-text {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7%;
+}
+
+#whatiam {
+  line-height: 6vh;
+}
+
+#pro-pic {
+  margin-right: 12%;
+}
+
+#aboutme {
+  width: 100%;
+  height: 100vh;
+  background-color: #1f6bb2;
+  color: white;
+  margin-top: 25vh;
+}
+
+#abouttitle {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+#aboutmetext {
+  text-align: center;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutmetext p {
+  width: 40%;
+  line-height: 3vh;
+  margin-top: 15vh;
+}
+
+#skills {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15vh;
+}
+
+#skills-title,
+#contact-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#HTML-logo,
+#CSS-logo,
+#JS-logo,
+#SOL-logo {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 30%;
+  object-fit: contain;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skills-items p {
+  text-align: center;
+  padding: 3vh;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#projects {
+  background-color: #1f6bb2;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20vh;
+  padding: 10vh 0;
+}
+
+#projects-title {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-left: 20vh;
+}
+
+#projects-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  margin-right: 10vh;
+}
+
+.projects-items img {
+  width: 30vh;
+  height: 30vh;
+}
+
+.projects-items img:hover {
+  opacity: 0.6;
+}
+
+.projects-items p {
+  text-align: center;
+  padding-bottom: 3vh;
+}
+
+#contact {
+  width: 100%;
+  height: 100vh;
+}
+
+#contact-title {
+  text-align: center;
+  padding: 15vh;
+}
+
+#linkedin-logo,
+#github-logo {
+  width: 20vh;
+  height: 20vh;
+}
+
+.contact-items p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 3vh 0;
+}
+
+.contact-items a:hover {
+  opacity: 0.7;
+}
+
+#contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
+#linkedin-logo {
+  margin-left: 6vh;
+}
+
+#github-logo {
+  margin-left: 1vh;
+}
+
+#bottom-bar {
+  background-color: #1f6bb2;
+  height: 5vh;
+}
+
+#bottom-bar p {
+  text-align: center;
+  padding-top: 1.75vh;
+  color: white;
+}
+
+/* ATTENTION
+Please view this project at 1650x843 pixels since it is not responsive yet
+Please view this project at 1650x843 pixels since it is not responsive yet
+Please view this project at 1650x843 pixels since it is not responsive yet
+ATTENTION */
