@@ -136,6 +136,52 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.topnav h1 {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 900;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 1.5vh;
+  top: 1.5vh;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #1f6bb2;
+}
+
+.active {
+  background-color: #1f6bb2;
+  color: white;
+  height: 6vh;
+}
+
 header {
   background-color: #1f6bb2;
   height: 10vh;
@@ -402,11 +448,11 @@ main {
 }
 
 #linkedin-logo {
-  margin-left: 6vh;
+  margin-left: 12vh;
 }
 
 #github-logo {
-  margin-left: 1vh;
+  margin-left: 5vh;
 }
 
 #bottom-bar {
@@ -522,8 +568,7 @@ ATTENTION */
   }
 
   #main-text {
-    height: 50%;
-    width: 100%;
+    margin-left: 8vh;
   }
 
   #pro-pic {
@@ -532,14 +577,90 @@ ATTENTION */
   }
 }
 
-/* @media (max-width: 1035px) {
-	#aboutmetext {
-		margin-top: 15vh;
-	}
-} */
+@media (max-width: 1035px) {
+  #aboutmetext {
+    margin-top: 15vh;
+  }
+}
 
 @media (max-width: 1000px) {
   #aboutmetext p {
     width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .topnav {
+    display: block;
+  }
+
+  header {
+    display: none;
+  }
+}
+
+@media (max-width: 766px) {
+  #projects {
+    height: 320vh;
+  }
+
+  #projects-container {
+    margin-bottom: 50vh;
+  }
+}
+
+@media (max-width: 655px) {
+  #contact {
+    height: 130vh;
+  }
+
+  #github-logo {
+    margin-left: 7vh;
+  }
+
+  #linkedin-logo {
+    margin-left: 16vh;
+  }
+
+  #intro,
+  #whatiam {
+    font-size: 2rem;
+  }
+
+  #hirebtn {
+    font-size: 1.5rem;
+  }
+
+  #name {
+    font-size: 3rem;
+  }
+
+  #aboutmetext p {
+    font-size: 0.8rem;
+  }
+
+  #aboutmetext {
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 556px) {
+  #aboutmetext {
+    margin-top: 15vh;
+  }
+
+  #intro,
+  #whatiam {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 526px) {
+  #aboutmetext {
+    margin-top: 20vh;
+  }
+
+  #aboutme {
+    height: 140vh;
   }
 }
